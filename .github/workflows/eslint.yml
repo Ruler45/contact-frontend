@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - vite_newdev
+      - main
 
   pull_request:
     types: [opened, synchronize, reopened]
