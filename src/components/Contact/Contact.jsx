@@ -11,13 +11,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log({ name, email, message });
-    // const Form = {
-    //   username: name,
-    //   email: email,
-    //   message: message,
-    // };
-    // Handle form submission logic here
     axios
       .post(
         "https://contactform-fq4a.onrender.com/api/contact",
@@ -28,7 +21,6 @@ const Contact = () => {
       .then((res) => {
         console.log(res);
         setSubmit1(true);
-        // console.log("Form:",JSON.stringify(Form));
       })
       .catch((err) => {
         console.log(err.message);
